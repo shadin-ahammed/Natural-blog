@@ -43,7 +43,7 @@
 /* -----------Start nav section----------- */
 .navbar{
     overflow: hidden;
-    background-image: linear-gradient(rgb(53, 146, 53) , rgb(78, 153, 78) ,rgb(72, 105, 72) ) !important;
+    background-image: linear-gradient(rgb(125, 211, 125) , rgb(106, 197, 106) ,rgb(34, 158, 34), rgb(57, 163, 57) ) !important;
 }
 .nav-menu{
     font-weight: bold;
@@ -58,7 +58,7 @@
 /* ----------End nav section-------------- */
 /* ------------Body image section------------- */
 .left-side{
-    margin-top: 10px;
+    margin-top: 10px !important;
     overflow: hidden;
 }
 .Right-side{
@@ -314,3 +314,114 @@ img:hover{
     }
   }
   /* ----------End Gellary section---------- */
+
+  /* --------------------login-----------css--------- */
+ 
+.header {
+	border-bottom: 1px solid #f0f0f0;
+    background-image: linear-gradient(rgb(125, 211, 125) , rgb(106, 197, 106) ,rgb(34, 158, 34), rgb(57, 163, 57) ) !important;
+	padding: 20px 40px;
+    border-radius: 4px;
+}
+
+.header h2 {
+	margin: 0;
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.form-control1 {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control1 label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control1 input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control1 input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control1.success input {
+	border-color: #2ecc71;
+}
+
+.form-control1.error input {
+	border-color: #e74c3c;
+}
+
+.form-control1 i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control1.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control1.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control1 small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control1.error small {
+	visibility: visible;
+}
+
+.form button {
+    background-image: linear-gradient(rgb(125, 211, 125) , rgb(106, 197, 106) ,rgb(34, 158, 34), rgb(57, 163, 57) ) !important;
+	border-radius: 4px;
+	color: #000;
+	display: block;
+	font-family: inherit;
+	font-size: 20px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+    border-color: whitesmoke !important;
+}
+.form button a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+}
+.login-footer{
+    margin-left: 40px;
+
+}
+.login-footer a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    background-image: linear-gradient(rgb(125, 211, 125) , rgb(106, 197, 106) ,rgb(34, 158, 34), rgb(57, 163, 57) ) !important;
+}

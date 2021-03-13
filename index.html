@@ -59,8 +59,14 @@
             </li>
           </ul>
           <form class="d-flex">
-            <button class="btn btn-outline-success" type="submit">Submit Photo</button>
-            <button class="btn btn-outline-success" type="submit">Login</button>
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal">
+             Submit Photos
+             </button>
+            
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+             Login
+            </button>
           </form>
         </div>
       </div>
@@ -71,7 +77,7 @@
       <div class="row">
           <div class="col-sm-8 left-side">
             <div class="text">
-              <h4>Public Post</h4>
+              <h4 class="tittle">Public Post</h4>
             </div>
             <div class="user-name">
               <h4> <img src="/image/3.jpg" alt="" class="pro-img"> Md Jahid hossen</h4>
@@ -300,10 +306,106 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quos voluptate blanditiis explicabo soluta quasi laborum unde eaque saepe. Nihil voluptatem soluta nisi magni cum laboriosam ad sit pariatur ipsum!</p>
         </div>
       </div>
-
   </div>
 </div>
 <!-- End post section-------- -->
+
+<!-- Register modal body------- -->
+<div class="modal fade" id="staticBackdrop" tabindex="-1" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Natural Blog</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="login-container">
+          <div class="header">
+              <h2>Create Account</h2>
+          </div>
+          <form id="form" class="form">
+              <div class="form-control1">
+                  <label for="username">Username</label>
+                  <input type="text" placeholder="Your Name" id="username" />
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+              </div>
+              <div class="form-control1">
+                  <label for="username">Email</label>
+                  <input type="email" placeholder="......@gmail.com" id="email" />
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+              </div>
+              <div class="form-control1">
+                  <label for="username">Password</label>
+                  <input type="password" placeholder="Password" id="password"/>
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+              </div>
+              <div class="form-control1">
+                  <label for="username">Confirm Password</label>
+                  <input type="password" placeholder="Confirm Password" id="password2"/>
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+              </div>
+              <button>Submit</button>
+          </form>
+          <footer class="login-footer">
+            <p>Already have an account?<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <a href="#">Login</a>
+            </button>
+          </p>
+          </footer>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ---------------login-------modal body---- -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Natural Blog</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="login-container">
+          <div class="header">
+              <h2>Login</h2>
+          </div>
+          <form id="form" class="form">
+              <div class="form-control1">
+                  <label for="username">Email</label>
+                  <input type="email" placeholder="......@gmail.com" id="email" />
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+              </div>
+              <div class="form-control1">
+                  <label for="username">Password</label>
+                  <input type="password" placeholder="Password" id="password"/>
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <small>Error message</small>
+              </div>
+              <button type="login"><a href="index.html"> Login</a></button>
+          </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -------End login modal body--------- -->
+    <!--------login form js ---------->
+    <script src="/js/login.js"></script>
+    <script src="/js/login2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- ---Font awesome cdn js link---- -->
     <script src="https://kit.fontawesome.com/68176f7840.js" crossorigin="anonymous"></script>
     <!-- --------Icon JS link -->
